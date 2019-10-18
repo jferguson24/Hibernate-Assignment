@@ -27,9 +27,9 @@ public class Book{
 	private Integer pubId; 
 	
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "authid", nullable = false)
+	@JoinColumn(name = "authorId", nullable = false)
 	private Author author;
-
+	
 	public Integer getBookId() {
 		return bookId;
 	}

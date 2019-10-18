@@ -26,7 +26,7 @@ public class Author {
 	@Column(name = "authorName")
 	private String authorName;
 
-	@OneToMany(mappedBy = "tbl_author", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
 	private Collection<Book> authorsBooks = new ArrayList<Book>();
 	
 	public Integer getAuthorId()
